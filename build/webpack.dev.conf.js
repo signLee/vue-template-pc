@@ -32,6 +32,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     contentBase: false, // since we use CopyWebpackPlugin.
     compress: true,
     host: HOST || config.dev.host,
+    // host: "172.19.11.36",//如果在开发的时候其它成员需要访问我本地的环境的时候可以把这里的host设置成本地的ip地址，
+    //这样其它成员就可以通过ip的方式来访问你的本地项目了
     port: PORT || config.dev.port,
     open: config.dev.autoOpenBrowser,
     overlay: config.dev.errorOverlay
